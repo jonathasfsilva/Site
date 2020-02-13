@@ -23,6 +23,23 @@ header#cabecalho img#icone {
   width: 200px;
 }
 
+header#cabecalho {
+  border-bottom: 2px #606060 dotted;
+  height: 150px;
+}
+
+header#cabecalho h1 {
+  font-family: Arial, sans-serif;
+  color: #484b4d;
+  font-size: 40px;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+header#cabecalho h2 {
+  font-family: Arial, sans-serif;
+  color: #484b4d;
+}
+
 
 /* Formatação de imagens com legendas */
 
