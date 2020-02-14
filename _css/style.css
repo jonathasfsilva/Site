@@ -31,6 +31,10 @@ p{
   text-indent: 30px;
 }
 
+p#creditos{
+  text-align: center;
+}
+
 header#cabecalho img#icone {
   position: absolute;
   top: 40px;
