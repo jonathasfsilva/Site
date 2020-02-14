@@ -6,12 +6,27 @@ body {
 
 div#interface {
   width: 650px;
-  background-color: white;
+  background: white;
   margin: 100px auto 0px auto;
   padding: 10px 10px 10px 10px
 }
 
+/* Formatação de fontes do site */
+
+h1 {
+  font-family: Quicksand Light;
+}
+
+h2 {
+  font-family: Quicksand Light;
+}
+
+h3 {
+  font-family: Quicksand Light;
+}
+
 p{
+  font-family: Quicksand Light;
   text-align: justify;
   text-indent: 30px;
 }
@@ -24,20 +39,20 @@ header#cabecalho img#icone {
 }
 
 header#cabecalho {
-  border-bottom: 2px #606060 dotted;
+  border-bottom: 2px black dotted;
   height: 150px;
 }
 
 header#cabecalho h1 {
-  font-family: Arial, sans-serif;
-  color: #484b4d;
+  font-family: Quicksand;
+  color: black;
   font-size: 40px;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
 }
 
 header#cabecalho h2 {
-  font-family: Arial, sans-serif;
-  color: #484b4d;
+  font-family: Quicksand Light;
+  color: black
 }
 
 
@@ -109,5 +124,5 @@ nav#menu a {
 }
 
 nav#menu a:hover {
-  color: #9dd2d8;
+  color: #white;
 }
