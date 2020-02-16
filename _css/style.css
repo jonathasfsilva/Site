@@ -130,3 +130,15 @@ nav#menu a {
 nav#menu a:hover {
   color: #white;
 }
+
+section#corpo {
+  display: block;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+footer#rodape {
+  display: block;
+  padding: 20px;
+  margin-top: 10px;
+}
