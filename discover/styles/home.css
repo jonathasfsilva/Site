@@ -1,7 +1,7 @@
 .content {
     display: grid;
-    grid-template-columns: 60% 40%;
-    grid-template-rows: 11.4rem 1fr;
+    grid-template-columns: 55% 45%;
+    grid-template-rows: 11.4rem 100%;
 
     grid-template-areas:
     'header header'
@@ -14,8 +14,8 @@ header {
 
 #bg {
     grid-area: left;
-
     background: url('/discover/assets/home-bg.svg') no-repeat top/contain;
+    background-position: left;
 }
 
 main {
@@ -25,8 +25,8 @@ main {
     align-items: center;
 }
 
-main .content{
-    width: min(36.3rem 100%);
+main .container{
+    width: min(36.3rem, 100%);
 }
 
 main h2{
