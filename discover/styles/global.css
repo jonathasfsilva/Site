@@ -34,7 +34,6 @@ body{
 body, input, button, textarea {
     font-size: clamp(14px, 1.6rem, 2vw);
     font-family: 'Open Sans', sans-serif;
-    /*font-family: 'Poppins', sans-serif;*/
 }
 
 .content {
@@ -52,4 +51,41 @@ body, input, button, textarea {
     clip-path: rect(0,0,0,0,0);
     white-space: nowrap;
     border-width: 0;
+}
+
+button, input, .button{
+    height: 5rem;
+    border-radius: .8rem;
+}
+
+button, .button{
+    font-family: 'Poppins';
+    font-weight: 500;
+    line-height: 0px;
+
+    color: var(--white);
+    background: var(--blue);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    cursor: pointer;
+
+    transition: filter .5s;
+}
+
+button:hover, .button:hover {
+    filter: brightness(1.2);
+}
+
+button > img
+.button > img {
+    margin-right: 1rem;
+    width: 2rem;
+}
+
+button.outlined,
+.button.outlined {
+
 }
