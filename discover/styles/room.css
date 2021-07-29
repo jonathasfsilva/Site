@@ -1,0 +1,24 @@
+.content {
+    display: grid;
+    grid-template-rows: 11.4rem 1fr;
+
+    grid-template-areas:
+    'header'
+    'main'
+}
+
+header {
+    grid-area: header;
+}
+
+header button {
+    position: fixed;
+    align-items: center;
+}
+
+main {
+    grid-area: main;
+
+    display: flex;
+    align-items: center;
+}
