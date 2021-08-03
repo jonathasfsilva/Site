@@ -1,24 +1,37 @@
 .content {
-    display: grid;
-    grid-template-rows: 11.4rem 1fr;
-
-    grid-template-areas:
-    'header'
-    'main'
+    max-width: 90%;
 }
 
-header {
-    grid-area: header;
-}
 
-header button {
-    position: fixed;
-    align-items: center;
-}
-
-main {
-    grid-area: main;
-
+#room header {
+    width: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+#room header .buttons{
+    display: flex;
+}
+
+#room header .buttons .button:nth-child(1){
+    margin-right: .8rem;
+    padding: 1.3rem 1.6rem;
+}
+
+#room header .buttons .button:nth-child(1) img{
+    margin-left: 1rem;
+    width: 2rem;
+    height: 2rem;
+}
+
+#room header .buttons .button:nth-child(2){
+    margin-right: .8rem;
+    padding: 1.3rem 3.2rem;
+}
+
+#room header .buttons .button:nth-child(2) img{
+    margin-right: 1rem;
+    width: 2rem;
+    height: 2rem;
 }
