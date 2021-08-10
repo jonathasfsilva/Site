@@ -49,6 +49,7 @@
     border: .2rem solid var(--grey-blue);
     padding: 1.6rem;
     border-radius: .0rem .8rem .8rem .8rem;
+    margin-bottom: 1.6rem;
 }
 
 #question-form textarea {
