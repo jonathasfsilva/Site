@@ -98,8 +98,21 @@
 
 .question-wrapper .question-content{
     display: flex;
+    align-items: flex-start;
+    margin-bottom: 3rem; 
+}
+
+.question-wrapper .question-content .user{
+    background: var(--blue);
+    clip-path: circle();
+    padding: 1.4rem;
+}
+
+.question-wrapper .question-content p{
+    word-break: break-word;
+    display: flex;
     align-items: center;
-    margin-bottom: 3rem;
+    min-height: 5.2rem;
 }
 
 .question-wrapper .question-content .question {
@@ -120,4 +133,13 @@
 
 .question-wrapper .actions > a > img {
     margin-right: 0.8rem;
+}
+
+/** question read **/
+.question-wrapper.read {
+    background: var(--grey-medium);
+}
+
+.question-wrapper.read .question-content .user{
+    background: var(--grey-blue);
 }
