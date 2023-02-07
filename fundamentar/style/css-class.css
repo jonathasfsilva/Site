@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+}
+
+
+h1 {
+    font-size: 60px;
+    color: yellow;
+    background-color: violet;
+}
+
+#container {
+    width: 300px;
+}
+
+.m-40 {
+    margin: 40px;
+}
