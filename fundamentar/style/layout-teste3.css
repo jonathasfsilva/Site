@@ -1,0 +1,30 @@
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    background-color: brown;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
