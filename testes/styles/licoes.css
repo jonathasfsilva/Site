@@ -1,0 +1,42 @@
+body {
+    padding: 0px;
+    margin: 50px;
+    background-color: rgb(49, 49, 49);
+    color: rgb(165, 196, 255);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1 {
+    display: flex;
+    color: rgba(255, 166, 0, 0.849);
+    justify-content: center;
+}
+
+h2 {
+    color: white;
+}
+
+hr {
+    background-color: rgba(224, 224, 61, 0.7);
+    height: 2px;
+    border: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+.subtopic {
+    color: wheat;
+}
+
+[separador] {
+    margin-bottom: 30px;
+}
+
+.codigo {
+    padding: 5px;
+    background-color: black;
+    color: rgb(138, 226, 138);
+    margin-right: 50px;
+}
