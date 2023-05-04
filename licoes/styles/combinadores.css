@@ -1,0 +1,17 @@
+body main h3 {
+    background-color: white;
+    color: red;
+    font-family: monospace;
+}
+
+main > div > ul > li {
+    color: wheat;
+}
+
+h4 + h5 {
+    color:wheat
+}
+
+button + button {
+    margin-left: 30px;
+}

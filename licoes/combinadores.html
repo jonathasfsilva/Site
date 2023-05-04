@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/licoes.css">
+    <link rel="stylesheet" href="styles/combinadores.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Combinators &#123;</h1>
+        <p>Combinadores, pois eles trabalham para buscar e combinar seletores a fim de aplicar uma estilização</p>
+        <hr>
+    </header>
+
+    <main>
+        <h2>Descendent combinator</h2>
+        <ul>
+            <li>Identificado por um espaço entre os seletores</li>
+            <li>Busca um elemento dentro do outro</li>
+            <li>Exemplo:</li>
+        </ul>
+
+        <pre class="codigo">body main h3 &#123;
+    background-color: white;
+    color: red;
+    font-family: monospace;
+&#125;</pre>
+
+        <h3>H3 estilizado</h3>
+        <div>
+            <h3>também funciona dentro de outros elementos como div</h3>
+        </div>
+
+        <h2>Child combinator</h2>
+
+        <ul>
+            <li>Identificado pelo sinal &gt; entre dois seletores</li>
+            <li>Seleciona somento os elementos que é filho direto do pai</li>
+            <li>Elementos diretos depois do filho serão desconsiderados</li>
+        </ul>
+
+    <pre class="codigo">main &gt; div &gt; ul &gt; li</pre>
+    <div>
+        <ul>
+            <li>item específico selecionado e modificado</li>
+            <ul>
+                <li>sub-item iginorado</li>
+            </ul>
+        </ul>
+    </div>
+
+    <h2>Adjacent sibling combinator</h2>
+    <ul>
+        <li>Identificado pelo sinal de + entre dois seletores</li>
+        <li>Seleciona somento o irmão direito que é irmão direto na hierarquia</li>
+    </ul>
+
+    <p>Exemplo 1:</p>
+
+    <h4>O h4</h4>
+    <h5>h5, Irmão direto do h4</h5>
+    <h5>h5, mas não irmão direto do h4</h5>
+
+    <p>Exemplo 2:</p>
+
+    <button>Um botão</button>
+    <button>Outro botão</button>
+
+    </main>
+
+    <footer>
+        <h1>&#125;</h1>
+    </footer>
+</body>
+
+</html>
