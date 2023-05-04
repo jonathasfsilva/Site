@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/licoes.css">
+    <link rel="stylesheet" href="styles/pseudo-classes.css">
+</head>
+
+<body>
+    <header>
+        <h1>Pseudo-classes</h1>
+        <p>é um tipo de elemento que irá selecionar um elemento que estiver em um estado específico</p>
+        <hr>
+    </header>
+
+    <main>
+        <p>Exemplo: é o primeiro elemento dentro de uma caixa, ou, o elemento que está com o ponteiro do mouse em cima
+            dele</p>
+        <p>Pseudo classes começa com dois pontos seguidos do nome da pseudo class :pseudo-class-name</p>
+
+        <h2>Selecionando elementos com pseudo-class</h2>
+        <ul>
+            <li>:first-child</li>
+            <li>:nth-of-type</li>
+            <li>:nth-child</li>
+        </ul>
+
+        <h3>Exemplo 1:</h3>
+        <pre class="codigo">ul li:first-child{
+    font-weight: bold;
+    color: wheat
+}</pre>
+
+        <ul class="exemplo1">
+            <li>Gradidão</li>
+            <li>Esperança</li>
+            <li>Fé</li>
+        </ul>
+
+        <h3>Exemplo 2:</h3>
+
+        <pre class="codigo">article p:nth-of-type(2){
+    color: red;
+    font-weight: bold;
+}</pre>
+
+        <article class="exemplo2">
+            <h4>Title</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus omnis corrupti amet culpa optio ea
+                molestias voluptatem sint alias nihil? Debitis eum veritatis assumenda consequuntur explicabo soluta
+                placeat enim modi.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam cum dolorum nostrum voluptates laboriosam
+                quibusdam dolores doloribus commodi possimus, dolorem libero sed placeat pariatur deleniti nihil alias.
+                Nihil, accusantium similique.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo consequatur dolorem dolore asperiores
+                voluptas, consequuntur voluptatibus suscipit? Tempora ad commodi sequi ipsam officia. Vero reiciendis
+                facilis voluptas laborum cupiditate quas?</p>
+        </article>
+
+        <h3>Exemplo 3:</h3>
+
+        <pre class="codigo">article :nth-of-type(2){
+    color: red;
+    font-weight: bold;
+}</pre>
+
+        <article class="exemplo3">
+            <h4>Title</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus omnis corrupti amet culpa optio ea
+                molestias voluptatem sint alias nihil? Debitis eum veritatis assumenda consequuntur explicabo soluta
+                placeat enim modi.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam cum dolorum nostrum voluptates laboriosam
+                quibusdam dolores doloribus commodi possimus, dolorem libero sed placeat pariatur deleniti nihil alias.
+                Nihil, accusantium similique.</p>
+            <h5>teste</h5>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo consequatur dolorem dolore asperiores
+                voluptas, consequuntur voluptatibus suscipit? Tempora ad commodi sequi ipsam officia. Vero reiciendis
+                facilis voluptas laborum cupiditate quas?</p>
+        </article>
+
+        <h3>Exemplo 4:</h3>
+        <p>odd: impar</p>
+        <p>even: par</p>
+
+        <pre class="codigo">ul li:nth-child(odd){
+    background-color: wheat;
+    color: rgba(0, 0, 0, 0.753);
+}
+
+ul li:nth-child(even){
+    background-color: rgba(0, 0, 0, 0.753);
+    color: wheat;
+}</pre>
+
+        <ul class="exemplo4">
+            <ul>
+                <li>impar</li>
+                <li>par</li>
+                <li>impar</li>
+                <li>par</li>
+                <li>impar</li>
+                <li>par</li>
+                <li>impar</li>
+                <li>par</li>
+                <li>impar</li>
+                <li>par</li>
+                <li>impar</li>
+                <li>par</li>
+            </ul>
+        </ul>
+
+        <h3>Exemplo 5</h3>
+
+        <p>ações do usuario</p>
+        <ul>
+            <li>:focus</li>
+            <li>:hover</li>
+        </ul>
+        <p>atributos</p>
+        <ul>
+            <li>desabled</li>
+            <li>required</li>
+        </ul>
+
+        <h4>exemplo hover:</h4>
+        <a href="">Clique aqui</a>
+        <input type="text">
+
+    </main>
+
+    <footer>
+        <h3>Referência</h3>
+        <a
+            href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements">https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements</a>
+    </footer>
+    <div id="fim"></div>
+</body>
+
+</html>
