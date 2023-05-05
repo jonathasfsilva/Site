@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    border: 1px solid red;
+    height: 97.3vh;
+}
+
+.item {
+    background-color: grey;
+    border: 1px solid black;
+    flex: 3
+}
+
+.item2 {
+    background-color: grey;
+    border: 1px solid black;
+    flex: 7
+}
