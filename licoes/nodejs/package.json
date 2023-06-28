@@ -1,0 +1,29 @@
+{
+  "name": "my-pkg",
+  "version": "1.0.0",
+  "description": "aprendendo nodejs",
+  "main": "exports.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/github/jonathasfsilva.git"
+  },
+  "keywords": [
+    "learning",
+    "nodejs",
+    "node",
+    "aprendendo",
+    "js"
+  ],
+  "author": "Jonathas F Silva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/github/jonathasfsilva/issues"
+  },
+  "homepage": "https://github.com/github/jonathasfsilva#readme",
+  "dependencies": {
+    "cfonts": "^3.2.0"
+  }
+}
