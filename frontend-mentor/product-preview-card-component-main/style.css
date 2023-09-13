@@ -1,0 +1,120 @@
+:root {
+    /*primary*/
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+
+    /*Neutral*/
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap');
+
+
+body {
+    font-size: 14px;
+    background-color: var(--cream);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100svw;
+    height: 100svh;
+}
+
+main {
+    width: 580px;
+    height: 440px;
+    background-color: var(--white);
+    border-radius: 10px;
+    display: flex;
+}
+
+main img {
+    width: auto;
+    height: 100%;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.infos {
+    padding: 30px;
+}
+
+h3, h4, p{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--dark-grayish-blue);
+}
+
+h1, h2 {
+    font-family: 'Fraunces', serif;
+}
+
+h1 {
+    font-family: 600;
+    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 33px;
+}
+
+h2 {
+    color: var(--dark-cyan);
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin: 0px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 600;
+}
+
+h4 {
+    font-weight: lighter;
+    text-decoration: line-through;
+}
+
+.precos {
+    display: flex;
+    align-items: center;
+}
+
+h2 + h4 {
+    padding-left: 10px;
+}
+
+p {
+    line-height: 24px;
+    margin: 0px;
+}
+
+button {
+    width: 100%;
+    background-color: var(--dark-cyan);
+    color: var(--white);
+    padding: 13px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button img {
+    margin-right: 8px;
+}
+
+button span {
+    color: var(--white);
+    margin: 0px;
+}
+
+.attribution {
+    margin-top: 20px;
+}
