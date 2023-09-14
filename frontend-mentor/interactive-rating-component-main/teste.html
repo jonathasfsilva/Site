@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Estilos para as estrelas */
+        .rating {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .rating .star {
+            cursor: pointer;
+        }
+
+        .rating .star:hover {
+            color: gold;
+        }
+
+        .rating .selected {
+            color: gold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Rating state start -->
+    <div id="rating-state">
+        <p>How did we do?</p>
+        <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+        <div class="rating">
+            <span class="star" data-rating="1">&#9733;</span>
+            <span class="star" data-rating="2">&#9733;</span>
+            <span class="star" data-rating="3">&#9733;</span>
+            <span class="star" data-rating="4">&#9733;</span>
+            <span class="star" data-rating="5">&#9733;</span>
+        </div>
+        <button id="submit-button">Submit</button>
+    </div>
+    
+    <!-- Thank you state start -->
+    <div id="thank-you-state" style="display: none;">
+        <p>You selected <span id="selected-rating"></span> out of 5</p>
+        <p>Thank you!</p>
+        <p>We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+    </div>
+    
+    <script>
+        const stars = document.querySelectorAll('.star');
+        const submitButton = document.getElementById('submit-button');
+        const ratingState = document.getElementById('rating-state');
+        const thankYouState = document.getElementById('thank-you-state');
+        const selectedRatingElement = document.getElementById('selected-rating');
+        
+        let selectedRating = 0;
+        
+        stars.forEach(star => {
+            star.addEventListener('click', () => {
+                const rating = parseInt(star.getAttribute('data-rating'));
+                selectedRating = rating;
+                updateRating(selectedRating);
+            });
+        });
+        
+        submitButton.addEventListener('click', () => {
+            ratingState.style.display = 'none';
+            thankYouState.style.display = 'block';
+        });
+        
+        function updateRating(rating) {
+            stars.forEach(star => {
+                const starRating = parseInt(star.getAttribute('data-rating'));
+                if (starRating <= rating) {
+                    star.classList.add('selected');
+                } else {
+                    star.classList.remove('selected');
+                }
+            });
+            selectedRatingElement.textContent = rating;
+        }
+    </script>
+</body>
+</html>
