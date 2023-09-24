@@ -40,7 +40,7 @@ h1 {
     height: 350px;
 }
 
-img {
+.rating-state img {
     background-color: var(--dark-blue-2);
     padding: 10px;
     border-radius: 100%;
@@ -104,4 +104,37 @@ button:hover {
 
 .attribution {
     margin-top: 30px;
+}
+
+#thank-you-state {
+    background-color: var(--dark-blue);
+    padding: 25px;
+    border-radius: 20px;
+    width: 310px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#thank-you-state img {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+#thank-you-state h3 {
+    color: var(--orange);
+    background-color: var(--dark-blue-2);
+    font-weight: lighter;
+    font-size: 18px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    width: fit-content;
+    margin: auto;
+}
+
+#thank-you-state p{
+    color: var(--light-grey);
 }
