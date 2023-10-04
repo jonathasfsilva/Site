@@ -20,6 +20,79 @@
 }
 
 body {
-    font-size: 18px;
+    font-size: 15px;
     font-family: 'Outfit';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--dark-blue-main);
+    width: 100svw;
+    height: 100svh;
 }
+
+#card {
+    width: 250px;
+    height: 480px;
+    background-color: var(--dark-blue-card);
+    color: var(--white);
+    padding: 20px;
+    border-radius: 16px;
+}
+
+.attribution {
+    margin-top: 50px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+p {
+    color: var(--soft-blue);
+}
+
+.infos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.preco, .tempo {
+    display: flex;
+    align-items: center;
+}
+
+.preco p {
+    color: var(--cyan);
+    font-weight: 600;
+}
+
+.info-icon {
+    height: 15px;    
+    width: auto;
+    margin-right: 4px;
+}
+
+hr {
+    width: 100%;
+    height: 1px;
+    background-color: var(--dark-blue-line);
+    border: 0 solid;
+  }
+
+.creator {
+    margin-top: 15px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 35px;
+}
+
+.creator img {
+    height: 100%;
+    width: auto;
+    margin-right: 10px;
+}
+
