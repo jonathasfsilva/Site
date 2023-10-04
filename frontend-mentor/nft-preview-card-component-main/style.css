@@ -1,6 +1,7 @@
 :root {
     --soft-blue: hsl(215, 51%, 70%);
     --cyan: hsl(178, 100%, 50%);
+    --cyan-opacity: hsla(178, 100%, 50%, 0.5);
 
     --dark-blue-main: hsl(217, 54%, 11%);
     --dark-blue-card: hsl(216, 50%, 16%);
@@ -40,6 +41,26 @@ body {
     border-radius: 16px;
 }
 
+.nft {
+    position: relative;
+}
+
+.nft-view {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    padding: 100px;
+    opacity: 0; 
+    transition: opacity 0.1s ease-in-out;
+}
+
+.nft:hover .nft-view {
+    cursor: pointer;
+    background-color: var(--cyan-opacity);
+    opacity: 1;
+}
+
 .attribution {
     margin-top: 50px;
 }
@@ -48,6 +69,12 @@ img {
     width: 100%;
     height: auto;
     border-radius: 8px;
+}
+
+h3:hover, .creator-name:hover {
+    transition: 0.3s;
+    cursor: pointer;
+    color: var(--cyan);
 }
 
 p {
@@ -95,4 +122,3 @@ hr {
     width: auto;
     margin-right: 10px;
 }
-
