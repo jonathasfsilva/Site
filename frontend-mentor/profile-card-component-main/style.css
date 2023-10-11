@@ -1,0 +1,29 @@
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --dark-cyan-bg: hsla(185, 87%, 31%, 0.856);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+
+    --dark-gray: hsl(0, 0%, 59%);
+}
+
+/*
+font-family: 'Kumbh Sans', sans-serif;
+*/
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: var(--dark-cyan-bg);
+    background-image: url('./images/bg-pattern-top.svg'), url('./images/bg-pattern-bottom.svg');
+    background-repeat: no-repeat;
+    background-position: -210px -350px, 95svb 50svh;
+    background-size: 900px, 900px;
+    background-attachment: fixed;
+}
+
+
