@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tipo de Dispositivo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    #deviceType {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div id="deviceType"></div>
+
+  <script>
+    function checkDeviceType() {
+      const width = window.innerWidth;
+
+      let deviceType;
+      if (width < 600) {
+        deviceType = 'Mobile';
+      } else if (width >= 600 && width < 768) {
+        deviceType = 'Tablet';
+      } else {
+        deviceType = 'Desktop';
+      }
+
+      document.getElementById('deviceType').innerText = `Tipo de dispositivo: ${deviceType}`;
+    }
+
+    // Chamada inicial para verificar o tamanho do dispositivo
+    checkDeviceType();
+
+    // Evento de redimensionamento da janela para atualizar o tipo de dispositivo
+    window.addEventListener('resize', checkDeviceType);
+  </script>
+</body>
+</html>

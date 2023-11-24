@@ -56,10 +56,35 @@ main {
     width: 370px;
 }
 
+.question {
+    font-size: 14px;
+    color: var(--very-dark-grayish-blue);
+    background-image: url('./images/icon-arrow-down.svg');
+    background-repeat: no-repeat;
+    background-position: center right;
+    margin-bottom: 20px;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
 .faq {
-    width: 400px;
+    width: 350px;
+    margin-right: 70px;
+    overflow: hidden;
+}
+
+hr {
+    width: 500px;
+    align-items: left;
 }
 
 #faqs {
-    height: 400px;
+    height: max-content;
+    margin-bottom: 60px;
+}
+
+.answer {
+    display: none;
 }
