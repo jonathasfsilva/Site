@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Editar Usuário</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <h1>Editar Usuário</h1>
+  
+  <form action="/edit/<%= usuario.id %>" method="POST">
+    <input type="text" name="nome" placeholder="Nome" value="<%= usuario.nome %>">
+    <input type="email" name="email" placeholder="E-mail" value="<%= usuario.email %>">
+    <button type="submit">Salvar</button>
+  </form>
+</body>
+</html>
